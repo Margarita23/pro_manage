@@ -24,29 +24,28 @@ A simple **Project Management System** built with **Ruby on Rails**, providing a
 ### Setup
 
 1. **Clone the repository:**
-  ```
-  git clone https://github.com/Margarita23/pro_manage.git
-  cd pro_manage
-	```
-
+```
+    git clone https://github.com/Margarita23/pro_manage.git
+    cd pro_manage
+```
 
 2. **Install the required gems:**
-  ```
-  bundle install
-	```
+```
+    bundle install
+```
 
 3. **Set up the database:**
-  ```
-  rails db:create
-	rails db:migrate
-	```
+```
+    rails db:create
+    rails db:migrate
+```
 
 4. **Start the server:**
-	```
-	rails s
-	```
+```
+    rails s
+```
 
 5. **Run the tests (if needed):**
-	```
-	rspec
-	```
+```
+    rspec
+```
