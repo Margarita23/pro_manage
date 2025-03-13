@@ -8,9 +8,11 @@
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
 
-project_1 = Project.create(title: "Landing Photo", description: "A project for landing page photo")
-project_2 = Project.create(title: "Landing Video", description: "A project for landing page video")
-project_3 = Project.create(title: "Landing Animation", description: "A project for landing page animation")
+user_1 = User.create(email: "user@example.com", password: "12345678", password_confirmation: "12345678")
+
+project_1 = Project.create(title: "Landing Photo", description: "A project for landing page photo", user_id: user_1.id)
+project_2 = Project.create(title: "Landing Video", description: "A project for landing page video", user_id: user_1.id)
+project_3 = Project.create(title: "Landing Animation", description: "A project for landing page animation", user_id: user_1.id)
 
 task_1 = Task.create(title: "Create Photo", description: "Create photo for landing page", status: :created, project_id: project_1.id)
 task_2 = Task.create(title: "Edit Photo", description: "Edit photo for landing page", status: :in_progress, project_id: project_1.id)
